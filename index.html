@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <canvas id="canvas" width="500" height="500"></canvas>
+    <canvas id="canvas" width="499" height="499"></canvas>
     <script type="text/javascript" src="Point.js"></script>
     <script type="text/javascript" src="Rect.js"></script>
     <script type="text/javascript" src="RectMap.js"></script>
@@ -21,9 +21,10 @@
     const $canvas = document.getElementById('canvas');
     const ctx = $canvas.getContext('2d');
     const unitSize = 10;
-    const
-      ctx.fillStyle = "rgb(200,0,0)";
-    ctx.fillRect(0, 0, 100, 100);
+
+    const rectMap = new RectMap(500, 500, ctx);
+    rectMap.init();
+    rectMap.start();
 
     </script>
   </body>
